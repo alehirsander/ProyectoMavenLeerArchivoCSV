@@ -54,6 +54,8 @@ public class App
 				        btnEntrar.click();
 				        lblValidacion=driver.findElement(By.id("loginerrormessage"));
 				        //Thread.sleep(2000);
+				        
+				        System.out.println("Ingreso exitoso");
 				        if (!lblValidacion.isDisplayed()) {
 				        	System.out.println("Error de usuario y contraseña");
 				        }
